@@ -13,6 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { GithubRepoCardComponent } from './github-repo-card/github-repo-card.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -34,6 +36,8 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     NgxPaginationModule,
     ToastrModule.forRoot(),
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
