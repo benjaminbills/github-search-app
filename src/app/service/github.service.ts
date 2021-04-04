@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
+
+import { environmentUrl } from 'src/environments/key';
 import { Repository } from '../github-class/repository';
 import { User } from '../github-class/user';
 import { NotificationService } from './notification.service';
@@ -23,7 +24,7 @@ export class GithubService {
 
     let promise = new Promise<void>((resolve, reject) => {
       this.http
-        .get<any>(`${environment.apiUrl}users/${username}`)
+        .get<any>(`${environmentUrl.apiUrl}users/${username}`)
         .toPromise()
         .then(
           (response) => {
@@ -59,7 +60,7 @@ export class GithubService {
     let promise = new Promise<void>((resolve, reject) => {
       this.http
         .get<any>(
-          `${environment.apiUrl}search/repositories?per_page=500&q=${repository}`
+          `${environmentUrl.apiUrl}search/repositories?per_page=500&q=${repository}`
         )
         .toPromise()
         .then(
@@ -89,7 +90,7 @@ export class GithubService {
     }
     let promise = new Promise<void>((resolve, reject) => {
       this.http
-        .get<any>(`${environment.apiUrl}users/${username}/repos`)
+        .get<any>(`${environmentUrl.apiUrl}users/${username}/repos`)
         .toPromise()
         .then(
           (response) => {
