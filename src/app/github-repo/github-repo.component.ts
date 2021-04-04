@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Repository } from '../github-class/repository';
 import { Search } from '../github-class/search';
 import { GithubService } from '../service/github.service';
 
@@ -9,7 +10,7 @@ import { GithubService } from '../service/github.service';
 })
 export class GithubRepoComponent implements OnInit {
   newSearch = new Search('');
-  repos: any;
+  repos: Repository | any;
   totalRecords!: any;
   page: any = 1;
   maxSize: any;

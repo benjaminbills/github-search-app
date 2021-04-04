@@ -19,7 +19,7 @@
 <div>
   <div class="container details" *ngIf="user">
     <hr />
-    <div class="row">
+    <div class="row pb-3">
       <div class="col-6">
         <img src="{{ user.avatar_url }}" alt="" class="user-img img-fluid" />
       </div>
@@ -39,7 +39,9 @@
       </div>
     </div>
     <div class="" *ngIf="user.repos > 0">
-      <button (click)="getRepo(user.login)" class="btn">View Repo</button>
+      <button (click)="getRepo(user.login)" class="btn btn-dark">
+        View Repo
+      </button>
       <div
         class=""
         *ngFor="
