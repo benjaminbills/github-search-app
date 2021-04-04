@@ -27,8 +27,10 @@ export class GithubService {
             this.user.bio = response.bio;
             this.user.follower = response.follower;
             this.user.login = response.login;
+
             resolve();
             console.log(this.user);
+            console.log(response);
           },
           (error) => {
             console.log(error);
@@ -37,9 +39,9 @@ export class GithubService {
     });
     return promise;
   }
-  getUser2(username: string) {
-    return this.http.get(`${environment.apiUrl}users/${username}`);
-  }
+  // getUser2(username: string) {
+  //   return this.http.get(`${environment.apiUrl}users/${username}`);
+  // }
   getRepo(repository: string) {
     return this.http.get(
       `${environment.apiUrl}search/repositories?q=${repository}`
@@ -51,7 +53,9 @@ export class GithubService {
     }
     let promise = new Promise<void>((resolve, reject) => {
       this.http
-        .get<any>(`${environment.apiUrl}search/repositories?q=${repository}`)
+        .get<any>(
+          `${environment.apiUrl}search/repositories?per_page=7&q=${repository}`
+        )
         .toPromise()
         .then(
           (response) => {
