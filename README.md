@@ -1,27 +1,54 @@
-# GithubSearchApp
+# WebApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+<table>
+<tr>
+<td>
+  A webapp that enble you search github, view users profile and repositories.
+</td>
+</tr>
+</table>
+
+## Demo
+
+Here is a working live demo : https://benjaminbills.github.io
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## [Usage](https://benjaminbills.github.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Development
 
-## Build
+Want to contribute? Great!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+To fix a bug or enhance an existing module, follow these steps:
 
-## Running unit tests
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Bug / Feature Request
 
-## Running end-to-end tests
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/benjaminbills/github-search-app/issues/new) by including your search query and the expected result.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/benjaminbills/quoteApp/issues/new). Please include sample queries and their corresponding results.
 
-## Further help
+## Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Angular CLI](https://github.com/angular/angular-cli)- version 11.2.5. - Javascript framework for building Application.
+- [Typescript](https://www.typescriptlang.org/) - Opensource language which builds on Javascript.
+- [Fontawesome](https://fontawesome.com/) - Vector Icons , Social Logos and Cross-browser compatible.
+- [Bootstrap](http://getbootstrap.com/) - Extensive list of components and Bundled Javascript plugins.
+
+## To-do
+
+- Modify UX/UI for better experience.
+
+## [License](https://github.com/benjaminbills/github-search-app/blob/master/License)
+
+MIT © [Benjamin Obafemi ](https://github.com/benjaminbills)
