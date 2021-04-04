@@ -1,0 +1,18 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ repo.full_name }}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+    <p class="card-text">
+      {{ repo.description }}
+    </p>
+    <p>created:{{ repo.created_at | date }}</p>
+    <p>{{ repo.language }}</p>
+    <div class="row">
+      <div class="col-6">Watchers:{{ repo.watchers }}</div>
+      <div class="col-6">Forks:{{ repo.forks }}</div>
+    </div>
+    <a href="{{ repo.svn_url }}" target="_blank" class="card-link"
+      >vist page on Github</a
+    >
+  </div>
+</div>
