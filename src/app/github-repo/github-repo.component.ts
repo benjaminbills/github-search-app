@@ -21,7 +21,7 @@ export class GithubRepoComponent implements OnInit {
   ngOnInit(): void {}
 
   getRepo() {
-    this.githubService.getRepo2(this.newSearch.search).then(() => {
+    this.githubService.getRepo(this.newSearch.search).then(() => {
       this.repos = this.githubService.repo;
     });
   }

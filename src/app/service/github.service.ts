@@ -51,15 +51,8 @@ export class GithubService {
     });
     return promise;
   }
-  // getUser2(username: string) {
-  //   return this.http.get(`${environment.apiUrl}users/${username}`);
-  // }
+
   getRepo(repository: string) {
-    return this.http.get(
-      `${environment.apiUrl}search/repositories?q=${repository}`
-    );
-  }
-  getRepo2(repository: string) {
     interface ApiResponse {
       items: Repository[];
     }
