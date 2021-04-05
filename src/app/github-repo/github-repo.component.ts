@@ -10,7 +10,7 @@ import { GithubService } from '../service/github.service';
 })
 export class GithubRepoComponent implements OnInit {
   newSearch = new Search('');
-  repos: Repository | any;
+  repos: any;
   totalRecords!: any;
   page: any = 1;
   maxSize: any;
