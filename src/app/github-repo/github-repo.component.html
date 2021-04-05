@@ -1,19 +1,21 @@
 <form
   (ngSubmit)="getRepo(); searchForm.reset()"
   #searchForm="ngForm"
-  class="container mb-4"
+  class="search-form container mb-4"
 >
   <label for="search">Search Repositories</label>
-  <div class="input-group">
-    <input
-      class="form-control"
-      type="text"
-      id="search"
-      [(ngModel)]="newSearch.search"
-      name="search"
-      #search="ngModel"
-      required
-    />
+  <div class="fields input-group">
+    <div class="search">
+      <input
+        class="form-control"
+        type="text"
+        id="search"
+        [(ngModel)]="newSearch.search"
+        name="search"
+        #search="ngModel"
+        required
+      />
+    </div>
 
     <button
       type="submit"

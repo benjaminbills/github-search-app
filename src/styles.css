@@ -1,2 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+
+.search {
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+
+.card {
+  border-radius: 2%;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, 0px 0px 10px #ffffff;
+}

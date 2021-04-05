@@ -49,11 +49,11 @@
       </div>
     </div>
     <div class="" *ngIf="user.repos > 0">
-      <button (click)="getRepo(user.login)" class="btn btn-dark">
+      <button (click)="getRepo(user.login)" class="repo btn btn-dark">
         View Repo
       </button>
       <div
-        class=""
+        class="mt-4"
         *ngFor="
           let repo of repo
             | paginate
