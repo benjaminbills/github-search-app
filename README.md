@@ -10,13 +10,13 @@
 
 ## Demo
 
-Here is a working live demo : https://benjaminbills.github.io
+Here is a working live demo : https://goofy-kowalevski-60096e.netlify.app/user
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## [Usage](https://benjaminbills.github.io/)
+## [Usage](https://goofy-kowalevski-60096e.netlify.app/user)
 
 ### Development
 
