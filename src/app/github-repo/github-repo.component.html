@@ -12,8 +12,19 @@
       [(ngModel)]="newSearch.search"
       name="search"
       #search="ngModel"
+      required
     />
-    <button class="btn btn-dark">Search</button>
+
+    <button
+      type="submit"
+      [disabled]="!searchForm.form.valid"
+      class="btn btn-dark"
+    >
+      Search
+    </button>
+  </div>
+  <div [hidden]="search.valid || search.pristine" class="alert alert-danger">
+    <p>Search field cannot be empty</p>
   </div>
 </form>
 <div class="container">
