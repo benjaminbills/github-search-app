@@ -37,15 +37,11 @@ export class GithubService {
             this.user.url = response.html_url;
             if (response.public_repos > 0) {
               this.repo = this.getUserRepo(response.login);
-              console.log(this.repo);
               resolve();
             }
             resolve();
-
-            console.log(response);
           },
           (error) => {
-            console.log(error);
             this.notifyService.showError(error.error.message, error.status);
           }
         );
@@ -66,7 +62,6 @@ export class GithubService {
         .then(
           (response) => {
             this.repo = response.items;
-            console.log(this.repo);
             if (response.items.length == 0) {
               this.notifyService.showError(
                 'There are no repository with such name',
@@ -76,8 +71,6 @@ export class GithubService {
             resolve();
           },
           (error) => {
-            console.log(error);
-
             this.notifyService.showError(error.error.message, error.status);
           }
         );
@@ -96,10 +89,9 @@ export class GithubService {
           (response) => {
             this.repo = response;
             resolve();
-            console.log('from service:', this.repo);
           },
           (error) => {
-            alert(error);
+            this.notifyService.showError(error.error.message, error.status);
           }
         );
     });
