@@ -42,7 +42,7 @@
   >
     <app-github-repo-card [repo]="repo"></app-github-repo-card>
   </div>
-  <div>
+  <div *ngIf="repos.length > 0">
     <pagination-controls
       id="repo_pagination"
       (pageChange)="page = $event"
